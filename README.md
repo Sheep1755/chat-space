@@ -58,7 +58,7 @@ has_many :messages
 has_many :users
 
 ## groupテーブル
-||Column|Type|Options|
+|Column|Type|Options|
 |------|----|-------|
 |name|string|index:true, null: false, unique: true|
 
