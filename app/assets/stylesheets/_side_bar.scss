@@ -4,28 +4,35 @@
     background-color: #253141;
     width: 300px;
     height: 100vh;
-    .side-bar__user-name {
+    &__user-name {
       height: 100px;
       display: flex;
       align-items: center;
         .top-items {
-          background-color: #d8d8d8;
           margin: 0 20px;
           height: 20px;
           width: 300px;
           display: flex;
           justify-content: space-between;
-          text-align: center;
-            .top-items__name {
-            }
-            .top-items__icons {
-              width: 60px;
+          align-items: center;
+          color: #ffffff;
+            &__icons {
+              display: flex;
+              justify-content: end;
+               .edit {
+                 text-decoration: none;
+               }
+               .fas {
+                 color: #ffffff;
+                 text-decoration: none;
+                 margin-left: 5px;
+               }        
             }
         }
-    }
-    .side-bar__group-list {
+     }
+    &__group-list {
       background-color: #2f3e51;
       height: calc(100vh - 100px); 
-    }
   } 
+ }
 }
