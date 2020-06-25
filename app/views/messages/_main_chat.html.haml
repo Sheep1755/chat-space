@@ -1,14 +1,29 @@
 .main-chat
   .main-chat__group-info
-    .main-chat__group-list
+    .main-chat__group-info--group-list
       test
-      %ul.main-chat__member-list
+      %ul.main-chat__group-info--member-list
         Member :
-        %li.main-chat__member-name 
+        %li.main-chat__group-info--member-name 
           あ
-    = link_to "#", class: "edit-btn" do
+    = link_to "#", class: "main-chat__edit-btn" do
       Edit
   .main-chat__message-list
+    .message-group
+      .message-group__message-contents
+        .message-group__message-contents--message
+          あ
+        .message-group__message-contents--message-date
+          2020年06月24日 18時00分
+      .message-group__message-detail
+        あ
+      .message-group__message-contents
+        .message-group__message-contents--message
+          あ
+        .message-group__message-contents--message-date
+          2020年06月24日 18時00分
+      .message-group__message-detail
+        あ  
   .main-chat__message-form
 
 
