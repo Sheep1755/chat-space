@@ -1,32 +1,32 @@
 .main-chat
-  .main-chat__group-info
-    .main-chat__group-info--group-list
+  .main-header
+    .main-header__group-list
       test
-      %ul.main-chat__group-info--member-list
+      %ul.main-header__member-list
         Member :
-        %li.main-chat__group-info--member-name 
-          あ
+        %li.main-header__member-name 
+          ABC
     = link_to "#", class: "main-chat__edit-btn" do
       Edit
   
-  .main-chat__message-list
+  .main-contents
     .message-group
       .message-group__message-contents
         .message-group__message-contents--message
-          あ
+          ABC
         .message-group__message-contents--message-date
           2020年06月24日 18時00分
       .message-group__message-detail
-        あ
+        ABC
       .message-group__message-contents
         .message-group__message-contents--message
-          あ
+          ABC
         .message-group__message-contents--message-date
           2020年06月24日 18時00分
       .message-group__message-detail
-        あ  
+        ABC  
   
-  .main-chat__message-form
+  .main-footer
     %form.form-groups
       .input-form
         %input{ type: "text", class: "input-form__text", placeholder: "type a message" }
