@@ -4,7 +4,8 @@
     background-color: #ffffff;
     width: calc(100vw - 300px);
     height: 100vh;
-      &__group-info {
+      
+    &__group-info {
         height: 100px;
         background-color: #ffffff;
         margin: 0 40px;
@@ -42,19 +43,23 @@
       padding-top: 35px;
       .message-group {
         margin-left: 40px;
+        
         &__message-contents {
           display: flex;
           margin-bottom: 12px;
+          
           &--message {
             color: #333333;
             font-size: 16px;
             margin-right: 10px;
           }
+          
           &--message-date {
             color: #999999;
             font-size: 12px;
           }
         }
+        
         &__message-detail {
           color: #434A54;
           font-size: 14px;
@@ -65,6 +70,42 @@
     &__message-form {
       background-color: #d2d2d2;
       height: 90px;
+      padding: 20px 40px;
+        
+        .form-groups {
+          display: flex;
+          .input-form {
+            display: flex;
+            width: 100%;
+            position: relative;
+            
+            &__text {
+              height: 50px;
+              width: 100%;
+              color: #434a54;
+              border-style: none; 
+              padding:0 40px 0  10px; 
+            }
+            &__image {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+          
+              &__file {
+                display: none;
+              }
+            }
+          }
+         
+          &__send-btn {
+            background-color: #38aef0;
+            color: #fff;
+            font-size: 16px;
+            padding: 0 30px;
+            margin-left: 15px;
+            border: none;
+         }
+       }
+     }
     }
-  }
-}
+ }  
