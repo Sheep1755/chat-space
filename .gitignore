@@ -28,5 +28,4 @@
 /node_modules
 /yarn-error.log
 yarn-debug.log*
-.yarn-integrity
-.DS_Store
+.yarn-integrity.DS_Store
