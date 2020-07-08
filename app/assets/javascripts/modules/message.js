@@ -40,7 +40,7 @@ $(function(){
     };
   }  
 
-  $(".form-groups").on("submit",function(e){
+  $(".form-groups").on("submit", function(e){
     e.preventDefault();
     let formData = new FormData(this);
     let url = $(this).attr('action');
@@ -55,8 +55,8 @@ $(function(){
     .done(function(data){
       let html = buildHTML(data)
       $(".main-contents").append(html);
-      $(".main-contents").animate({ scrollTop: $(".main-contents")[0].scrollHeight});
       $(".form-groups")[0].reset();
+      $(".main-contents").animate({ scrollTop: $(".main-contents")[0].scrollHeight});
       $(".form-groups__send-btn").prop('disabled', false);
     })
     .fail(function() {
