@@ -1,6 +1,6 @@
 $(function(){
   function buildHTML(message){
-    if (message.image) {
+    if ( message.image ) {
       let html = 
         `<div class="message-group" data-message-id=${message.id}>
           <div class="message-group__message-contents">
@@ -39,7 +39,6 @@ $(function(){
       return html;
     };
   }  
-
   $(".form-groups").on("submit", function(e){
     e.preventDefault();
     let formData = new FormData(this);
